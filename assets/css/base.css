@@ -1,0 +1,140 @@
+:root {
+    /* Component heights */
+    --header-height: 60px;
+    --navbar-height: 60px;
+    --content-width: 600px;
+    --image-width--s: 400px;
+    --image-width--m: 500px;
+    --image-width--l: 1000px;
+
+    /* Color variables */
+    --primary-color: #cc648a ;
+    --primary-color-bolt:  #c03c68;
+    --primary-color-light: #dd949f;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color-light: #bbb;
+    --text-color-dark: #e78d93;
+    --border-color: #;
+    --input-color: ;
+
+    /* Font size */
+    --title-font-size: 3.5rem;
+    --subtitle-font-size: 2.5rem;
+    --normal-font-size: 1.2rem;
+    --small-font-size: 1rem;
+
+    
+
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6rem;
+    font-size: 100%;
+    user-select: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* background-color: rgba(0, 0, 0, .85); */
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Reuseable css class */
+
+.container {
+    width: calc(100% - 20px);
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.section {
+    padding: 4rem 0;
+}
+
+.section___title {
+    font-size: var(--h1-font-size);
+}
+
+.section__desc {
+    display: block;
+    font-size: var(--h3-font-size);
+    margin-bottom: 3rem;
+}
+
+.section___title,
+.section___desc {
+    text-align: center;
+}
+
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.btn {
+    border: none;
+    background-color: var(--black-color);
+    height: 50px;
+    min-width: 20px;
+    color: var(--white-color) !important;
+    font-size: 1.2rem;
+    font-weight: 400;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 24px;
+}
+
+
+.btn.btn-primary {
+    background-color: var(--primary-color-light);
+}
+
+/* Scroll btn */
+.scroll {
+    padding-top: 80px;
+    padding-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 12px;
+}
+
+.scroll-btn {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.scroll-icon {
+    font-size: 1.6rem;
+}
+
+.scroll-btn:hover {
+    transform: translateY(4px);
+}
+
+.scroll-btn.scroll-btn--up:hover {
+    transform: translateY(-4px);
+}
